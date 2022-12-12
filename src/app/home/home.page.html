@@ -24,6 +24,17 @@
         <ion-button color="dark" expand="block" class="ion-margin-top" (click)="onCalculate()">
           Calcular
         </ion-button>
+
+        <ion-card color="primary" class="ion-text-center">
+          <ion-card-header>
+            <ion-card-subtitle>Seu IMC</ion-card-subtitle>
+            <ion-card-title>{{imcFormatted}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            A classificação do seu IMC é <strong>{{classification}}</strong>
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
